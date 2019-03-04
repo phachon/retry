@@ -43,7 +43,7 @@ func TestRetry_RetryIntervalTime(t *testing.T) {
 			return err
 		}
 		return nil
-	}, SetRetryCount(3), SetIntervalTime(3 * time.Second))
+	}, SetRetryCount(3), SetIntervalTime(3*time.Second))
 	if err != nil {
 		t.Errorf("retry err=%s", err.Error())
 		return
@@ -67,7 +67,7 @@ func TestRetry_RetryTimeout(t *testing.T) {
 			return err
 		}
 		return nil
-	}, SetRetryCount(3), SetRetryTimeout(800 * time.Millisecond))
+	}, SetRetryCount(3), SetRetryTimeout(800*time.Millisecond))
 	if err != nil {
 		t.Errorf("retry err=%s", err.Error())
 		return

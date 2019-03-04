@@ -29,7 +29,7 @@ func Retry(call func() error, options ...Option) error {
 
 	if ops.RetryTimeout == 0 {
 		return simpleRetry(call, ops)
-	}else {
+	} else {
 		return timeoutRetry(call, ops)
 	}
 }
