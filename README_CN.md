@@ -5,26 +5,28 @@
 [![go_Report](https://goreportcard.com/badge/github.com/phachon/retry)](https://goreportcard.com/report/github.com/phachon/retry)
 [![platforms](https://img.shields.io/badge/platform-All-yellow.svg?style=flat)]()
 
-Have a good retry.
+一个重试工具包
 
-[中文文档](README_CN.md)
+[English](README.md)
 
-## Feature
-- Support setting retry times
-- Support setting retry interval
-- Support setting retry timeout
 
-## Install
+## 功能
+- 支持设置重试次数
+- 支持重试间隔时间
+- 支持重试超时时间
+
+## 安装
 ```bash
-go get github.com/phachon/retry
+go get code.byted.org/motor/gopkg/retry
 ```
 
-## Used
+## 使用
+
 ```go
-import github.com/phachon/retry
+import code.byted.org/motor/gopkg/retry
 ```
 
-### Simple
+### 简单例子
 ```go
 url := "https://api.github.com/"
 req, _ := http.NewRequest("GET", url, nil)
@@ -46,7 +48,7 @@ defer res.Body.Close()
 fmt.Println(string(body))
 ```
 
-### Retry interval
+### 重试间隔
 ```go
 url := "https://api.github.com/"
 req, _ := http.NewRequest("GET", url, nil)
@@ -69,7 +71,7 @@ defer res.Body.Close()
 fmt.Println(string(body))
 ```
 
-### Retry timeout
+### 重试超时
 ```go
 url := "https://api.github.com/"
 req, _ := http.NewRequest("GET", url, nil)
@@ -93,13 +95,13 @@ defer res.Body.Close()
 fmt.Println(string(body))
 ```
 
-## Feedback
+## 反馈
 
-- If you like the project, please [Star](https://github.com/phachon/retry/stargazers).
-- If you have any problems in the process of use, welcome submit [Issue](https://github.com/phachon/retry/issues).
-- If you find and solve bug, welcome submit [Pull Request](https://github.com/phachon/retry/pulls).
-- If you want to redevelop, welcome [Fork](https://github.com/phachon/retry/network/members).
-- If you want to make a friend, welcome send email to [phachon@163.com](mailto:phachon@163.com).
+- 如果您喜欢该项目，请 [Star](https://github.com/phachon/wmqx/stargazers).
+- 如果在使用过程中有任何问题， 请提交 [Issue](https://github.com/phachon/wmqx/issues).
+- 如果您发现并解决了bug，请提交 [Pull Request](https://github.com/phachon/wmqx/pulls).
+- 如果您想二次开发，欢迎 [Fork](https://github.com/phachon/wmqx/network/members).
+- 如果你想交个朋友，欢迎发邮件给 [phachon@163.com](mailto:phachon@163.com).
 
 ## License
 
